@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>
+    Welcome to AnyPrint.js
+</h1>
+<h2>
+    This title is out of printable HTML
+</h2>
+<hr />
+<div id="printableDiv">
+    <h2>
+        Here start the printable HTML
+    </h2>
+    <p showOnPrint="hidden">This text is HIDDEN on print</p>
+    <p style="display:none;" showOnPrint="visible">This text is VISIBLE only on print</p>
+
+    <h4>
+        Usage:
+    </h4>
+    <p>
+        Simple use <strong>anyPrint.printElement('printableDiv') </strong>
+    </p>
+    <p>
+        Also can add options using anyPrint.printElement('printableDiv', options)
+    </p>
+    <p>
+        The attribute <strong>showOnPrint</strong> can toogle visibility on print window
+    </p>
+    <p>
+        <code>
+            <br />
+            showOnPrint="hidden"  ->  Hidden on print <br />
+            showOnPrint="visible"  ->  Visible on print although element have class="hidden" or display:none;
+        </code>
+    </p>
+
+    <h4>
+        Options example:
+    </h4>
+    <code>
+        <br />
+        var options = new Object(); <br />
+        options["title"] = "My Title";    <br />
+        options["appendDate"] = true;           <br />
+        anyPrint.printElement('printableDiv',options) <br />
+    </code>
+</div>
+<hr />
+
+
