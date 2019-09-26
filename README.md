@@ -39,7 +39,7 @@ You have two options to print
 
 **Note:** in XHTML you need use **anyPrint="anyPrint"**
 
-
+### Hide or force to show elements
 The attribute **showOnPrint** can toogle visibility on print window
 
 ```html
