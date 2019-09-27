@@ -8,7 +8,7 @@ Nothing! ;)
 
 ### Installing
 
-Put the reference to AnyPrint.js in your HTML
+Download (AnyPrint.js) and include in your project
 
 ```html
 <script src="~/js/AnyPrint.js"></script>
@@ -28,23 +28,23 @@ You have two options to print
 2) Print this HTML element using **AnyPrint.Print('printableDiv')**
 
 ### Using attribute
-1) Put **anyPrint attribute** on each element that you need print
+1) Put **anyPrint attribute** on each element that you need to print
 	```html
 	<div anyPrint>...</div>
 	...
 	...
 	<div anyPrint>...</div>
 	```
-2) Simple use **AnyPrint.Print()**
+2) Simply use **AnyPrint.Print()**
 
-**Note:** in XHTML you need use **anyPrint="anyPrint"**
+**Note:** in XHTML you need to use **anyPrint="anyPrint"**
 
-### Hide or force to show elements
-The attribute **showOnPrint** can toogle visibility on print window
+### Hide or force elements visibility
+The attribute **showOnPrint** can toggle visibility on print window
 
 ```html
 showOnPrint="hidden"  <!--Hidden on print-->
-showOnPrint="visible" <!--Visible on print although element have class="hidden" or display:none;-->
+showOnPrint="visible" <!--Visible on print even if the element has class="hidden" or display:none;-->
 ```
 
 ### Options example:
@@ -62,7 +62,7 @@ AnyPrint.Print('printableDiv');
 
 ```html
 <h2>
-	This block **will printed**
+	This block **will be printed**
 </h2>
 <div id="printableDiv">
     <h2>
@@ -84,25 +84,25 @@ AnyPrint.Print('printableDiv');
 </h2>
 <div anyPrint>
     <h2>
-        Here start the printable HTML
+        Here starts the printable HTML
     </h2>
     <p showOnPrint="hidden">This text is HIDDEN on print</p>
     <p style="display:none;" showOnPrint="visible">This text is VISIBLE only on print</p>    
 </div>
 
 <h2>
-	This block **will not printed** because haven't the **anyPrint attribute**
+	This block **will not be printed** because it hasn't the **anyPrint attribute**
 </h2>
 <div>
     <h2>
-        Here start the printable HTML
+        Here starts the printable HTML
     </h2>
     <p showOnPrint="hidden">This text is HIDDEN on print</p>
     <p style="display:none;" showOnPrint="visible">This text is VISIBLE only on print</p>    
 </div>
 
 <h2>
-	This block **will printed** also.
+	This block **will be printed** too.
 </h2>
 <div anyPrint>
     <h2>
