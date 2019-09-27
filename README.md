@@ -8,7 +8,7 @@ Nothing! ;)
 
 ### Installing
 
-Download [AnyPrint.js](AnyPrint.js) and include in your project
+Download [AnyPrint.js](https://raw.githubusercontent.com/ezefdeil/AnyPrint/master/AnyPrint.js) and include in your project
 
 ```html
 <script src="~/js/AnyPrint.js"></script>
